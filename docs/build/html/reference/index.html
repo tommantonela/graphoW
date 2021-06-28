@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Reference &#8212; graphoW 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Developer" href="../developer/index.html" />
+    <link rel="prev" title="Tutorial" href="../tutorial.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="reference">
+<span id="id1"></span><h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Release</dt>
+<dd class="field-odd"><p>1.0</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>Jun 28, 2021</p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+<section id="module-textgraph">
+<span id="textgraph-main"></span><h2>textgraph main<a class="headerlink" href="#module-textgraph" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="textgraph.NounChunksTextGraph">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">textgraph.</span></span><span class="sig-name descname"><span class="pre">NounChunksTextGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.NounChunksTextGraph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Class implementing a graph in which nodes represent the found noun_chucks.</dt><dd><p>Lemmatization has no effect over this graph</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nlp</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>process_text:</strong></p></td>
+<td><p>Pre-process the text into a list of tokens.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.NounChunksTextGraph.process_text">
+<span class="sig-name descname"><span class="pre">process_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lemma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.NounChunksTextGraph.process_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#textgraph.TextGraph.process_text" title="textgraph.TextGraph.process_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">process_text()</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="textgraph.NounTextGraph">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">textgraph.</span></span><span class="sig-name descname"><span class="pre">NounTextGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.NounTextGraph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Class implementing a graph in which nodes represent the nouns.</dt><dd><p>Only punctuation marks are removed.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nlp</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>process_text:</strong></p></td>
+<td><p>Pre-process the text into a list of tokens.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.NounTextGraph.process_text">
+<span class="sig-name descname"><span class="pre">process_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lemma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.NounTextGraph.process_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#textgraph.TextGraph.process_text" title="textgraph.TextGraph.process_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">process_text()</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="textgraph.PosTextGraph">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">textgraph.</span></span><span class="sig-name descname"><span class="pre">PosTextGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.PosTextGraph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Class implementing a graph in which nodes represent the part-of-speech tags of each of the words in the text.</dt><dd><p>Punctuation marks are removed and no lemmatization is performed before pos-tagging.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nlp</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>process_text:</strong></p></td>
+<td><p>Pre-process the text into a list of tokens.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.PosTextGraph.process_text">
+<span class="sig-name descname"><span class="pre">process_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lemma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.PosTextGraph.process_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#textgraph.TextGraph.process_text" title="textgraph.TextGraph.process_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">process_text()</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="textgraph.TextGraph">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">textgraph.</span></span><span class="sig-name descname"><span class="pre">TextGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class to represent a graph of words inspired in “Graph-of-word and TW-IDF: new approach to ad hoc IR”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>graph</strong><span class="classifier">DiGraph</span></dt><dd><p>the structure supporting the graph of words</p>
+</dd>
+<dt><strong>language_models: dict</strong></dt><dd><p>‘static’ dictionary containing a mapping between the supported languages and the corresponding model.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>_text2graph:</strong></p></td>
+<td><p>Builds the graph-of-words.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>process_text:</strong></p></td>
+<td><p>Pre-process the text into a list of tokens.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>statistics:</strong></p></td>
+<td><p>Computes statistics and speech graph attributes based on “Graph analysis of dream reports is especially informative about psychosis”.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>narrative_consistency:</strong></p></td>
+<td><p>Computes the narrative consistency of the graph according to the definitions in “Measuring Narrative Fluency by Analyzing Dynamic Interaction Networks in Textual Narratives”</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>narrative_consistency_keyword:</strong></p></td>
+<td><p>Computes the keyword narrative consistency of the graph according to the definitions in “Measuring Narrative Fluency by Analyzing Dynamic Interaction Networks in Textual Narratives”</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>plot_graph:</strong></p></td>
+<td><p>Plots the graph of words based on a Kamada Kawai layout.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.TextGraph.narrative_consistency">
+<span class="sig-name descname"><span class="pre">narrative_consistency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'betweenness'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph.narrative_consistency" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Computes the narrative consistency of the graph according to the definitions in “Measuring Narrative Fluency by Analyzing Dynamic Interaction Networks in Textual Narratives”</dt><dd><p>The consistency is computed as the entropy of the centrality of entities/words.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>metric</strong><span class="classifier">str, optional</span></dt><dd><p>The metric on which base the consistency.
+Options: betweenness, degree, closeness centrality, mean (arithmetic mean of the three metrics)
+Default is betweenness.</p>
+</dd>
+<dt><strong>nodes</strong><span class="classifier">nodes, optional</span></dt><dd><p>Entities over which compute the consistency. If None, all words are considered.
+Default is None.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>float</dt><dd><p>The narrative consistency of the graph.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.TextGraph.narrative_consistency_keyword">
+<span class="sig-name descname"><span class="pre">narrative_consistency_keyword</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'betweenness'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph.narrative_consistency_keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the keyword narrative consistency of the graph according to the definitions in “Measuring Narrative Fluency by Analyzing Dynamic Interaction Networks in Textual Narratives”
+Computes the <code class="docutils literal notranslate"><span class="pre">narrative_consistency</span></code> over a selected set of keywords. Keywords are those belonging to the cluster with the highest centrality.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>metric</strong><span class="classifier">str, optional</span></dt><dd><p>The metric on which base the consistency.
+Options: betweenness, degree, closeness centrality, mean (arithmetic mean of the three metrics)
+Default is betweenness.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>float</dt><dd><p>The keyword narrative consistency of the graph.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.TextGraph.plot_graph">
+<span class="sig-name descname"><span class="pre">plot_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph.plot_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the graph of words based on a Kamada Kawai layout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>plot</dt><dd><p>the created plot</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.TextGraph.process_text">
+<span class="sig-name descname"><span class="pre">process_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lemma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph.process_text" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Pre-process the text into a list of tokens.
+Nodes represent the words in the original graph without any pre - processing.
+Only punctuation marks are removed.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>text</strong><span class="classifier">str</span></dt><dd><p>the text to build the graph</p>
+</dd>
+<dt><strong>lemma</strong><span class="classifier">boolean, optional</span></dt><dd><p>Whether to consider the lemma of the words in graph creation or not.
+By default <code class="docutils literal notranslate"><span class="pre">lemma</span> <span class="pre">=</span> <span class="pre">False</span></code>, meaning that no lemamatization will be applied.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>list</dt><dd><p>the list of tokens obtained from the text</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="textgraph.TextGraph.statistics">
+<span class="sig-name descname"><span class="pre">statistics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#textgraph.TextGraph.statistics" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Computes statistics and speech graph attributes based on “Graph analysis of dream reports is especially informative about psychosis”:</dt><dd><dl class="simple">
+<dt>General attributes:</dt><dd><ul class="simple">
+<li><p>number_of_nodes.</p></li>
+<li><p>number_of_edges.</p></li>
+</ul>
+</dd>
+<dt>Connected component attributes:</dt><dd><ul class="simple">
+<li><p>NCC. Number of weakly connected components.</p></li>
+<li><p>NSC. Number of strongly connected components.</p></li>
+<li><p>LCC. Number of nodes in the largest weakly connected components.</p></li>
+<li><p>LSC. Number of nodes in the largest strongly connected components.</p></li>
+</ul>
+</dd>
+<dt>Recurrence attributes:</dt><dd><ul class="simple">
+<li><p>PE. Parallel Edges: sum of all parallel edges linking the same pair of nodes.</p></li>
+</ul>
+</dd>
+<dt>Cycles:</dt><dd><ul class="simple">
+<li><p>L1. Cycles of one one computed as the trace of the adjacency matrix.</p></li>
+<li><p>L2. Cycles of two nodes computed as the trace of the squared adjacency matrix divided by 2.</p></li>
+<li><p>L3. Cycles of two nodes computed as the trace of the cubed adjacency matrix divided by 3.</p></li>
+</ul>
+</dd>
+<dt>Global attributes:</dt><dd><ul class="simple">
+<li><p>degree_average.</p></li>
+<li><p>degree_std.</p></li>
+<li><p>density.</p></li>
+<li><p>diameter. Length of the longest shortest path in the graph</p></li>
+<li><p>average_shortest_path. Average length of the shortest path between all pairs of nodes in the graph.</p></li>
+<li><dl class="simple">
+<dt>clustering_coefficient. Average clustering coefficient. The coefficient is defined as the fraction of</dt><dd><p>all possible directed triangles in the graph.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>dict</dt><dd><p>a dictionary containing the described metrics</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="textsgraphs-main">
+<h2>textsgraphs main<a class="headerlink" href="#textsgraphs-main" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">graphoW</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../tutorial.html" title="previous chapter">Tutorial</a></li>
+      <li>Next: <a href="../developer/index.html" title="next chapter">Developer</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Antonela Tommasel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/reference/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
